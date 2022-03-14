@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+.section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section {
+    float: left;
+    width: 55%;
+}
+.img-section {
+    float: right;
+    width: 40%;
+}
+.img-section img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10%;
+    border: 5px solid black;
+    box-shadow: 0 12px 10px gray;
+}
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+.content-section .content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .content .btn1 a {
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+.content-section .content .btn1 {
+    margin-top: 30px;
+}
+.content-section .content .btn1 a:hover {
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-section .social {
+    margin: 40px 40px;
+}
+.content-section .social i {
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0 10px;
+}
+.content-section .social i:hover {
+    color: #3d3d3d;
+}
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section {
+        float: none;
+        width: 100%;
+      
+    }
+    .img-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .img-section {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .content-section .title {
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .content .btn1 {
+        text-align: center;
+    }
+    .content-section .content .btn1 a {
+        padding: 9px 30px;
+    }
+    .content-section .social {
+        text-align: center;
+    }
+    
+}
+
+.btn1 {
+    display: inline-block;
+    
+}
+.btn2 {
+    display: inline-block;
+    padding: 20px;
+}
+.btn2 a {
+    display: flex;
+    border-radius: 10%;
+}
+.btn1 a {
+    border-radius: 10%;
+}
+.btn2 a:hover {
+    background-color: gray;
+    color: black;
+}

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Falls Soap Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c86043c09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="resources/styles.css">
+    <script src="cart.js" async></script>
+</head>
+<body>
+
+<!--------------------NAvbar---------------->
+    <header class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img class="img" src="resources/images/silverfalls.jpg" alt="Logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="about.html" target="_blank">About Us</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><a href="#location">Sold at..</a></li>
+                    <li class="cart-icon"><a href="#"><i class="fa-solid fa-cart-shopping" id="cart-icon"></i><span></span></a></li>
+                </ul>
+
+            </nav>
+            <!-- <i class="fa-solid fa-cart-shopping cart shopping"></i> -->
+            <i class="fa fa-bars menu-icon" onclick="menutoggle()"></i>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>SilverCreek<br>Soap Company</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Aliquid eaque corrupti excepturi explicabo debitis.</p>
+                <a href="#products" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img class="family frame" src="resources/images/family.jpeg" alt="soap">
+            </div>
+        </div>
+        <!------Cart-->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!----Content-->
+            <div class="cart-content">
+
+              
+         
+               
+            </div>
+            <!---Total--->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <!------Buy button-->
+            <button type="button" class="btn btn-buy">Buy Now</button>
+
+            <!------Cart Close-->
+            <i class="fa fa-window-close" id="close-cart"></i>
+        </div>
+    </div>
+</header>
+
+<!----- Featured/ Main 
+<main class="categories">
+    <div class="small-container">  
+        <div class="row">
+            <div class="col-3">
+                <img src="resources/images/flower.jpg" alt="soap">
+            </div>
+            <div class="col-3">
+                <img src="resources/images/flower.jpg" alt="soap"></div>
+            <div class="col-3">
+                <img src="resources/images/flower.jpg" alt="soap"></div>
+            </div>
+</div>
+  
+
+</main> ------->
+<!----featured products------->
+<div class="small-container" id="products">
+    <h2 class="title">Soap Products</h2>
+    <div class="row">
+        <!---Singular Item---------->
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/apricot.jpeg" alt="Apricot Soap">
+            <h4 class="shop-title">Apricot</h4>
+            <span class="price">$13.49</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <!-------SIngle item End------------------>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/rum.jpeg" alt="Bay Rum Soap">
+            <h4 class="shop-title">Bay Rum</h4>
+            <span class="price">$17.47</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/cinn.jpeg" alt="Cinnamon Soap">
+            <h4 class="shop-title">Cinnamon</h4>
+            <span class="price">$19.83</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/newcocu.jpg" alt="Cocunut Soap">
+            <h4 class="shop-title">Cocunut</h4>
+            <span class="price">$37.83</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+
+    </div>
+  
+   
+    <div class="row">
+        <!---Singular Item---------->
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/fir-needle.jpeg" alt="Fir Needle Soap">
+            <h4 class="shop-title">Fir Needle</h4>
+            <span class="price">$9.49</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <!-------SIngle item End------------------>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/lavender.jpeg" alt="Lavender Soap">
+            <h4 class="shop-title">Lavender</h4>
+            <span class="price">$12.47</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/newLemon.jpg" alt="LemonGrass Soap">
+            <h4 class="shop-title">LemonGrass</h4>
+            <span class="price">$129.83</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/lilac.jpeg" alt="Lilac Soap">
+            <h4 class="shop-title">Lilac</h4>
+            <span class="price">$39.83</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+
+    </div>
+    <div class="row">
+        <!---Singular Item---------->
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/linden.jpeg" alt="Linden Soap">
+            <h4 class="shop-title">Linden</h4>
+            <span class="price">$16.92</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <!-------SIngle item End------------------>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/orange.jpeg" alt="Orange Spice Soap">
+            <h4 class="shop-title">Orange Spice</h4>
+            <span class="price">$127.17</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/patchnew.jpg" alt="Patchouli Soap">
+            <h4 class="shop-title">Patchouli</h4>
+            <span class="price">$519.83</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/pear1.jpeg" alt="Pear Soap">
+            <h4 class="shop-title">Pear</h4>
+            <span class="price">$24.91</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+
+    </div>
+    <div class="row">
+        <!---Singular Item---------->
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/plumeria.jpeg" alt="Plumeria Soap">
+            <h4 class="shop-title">Plumeria</h4>
+            <span class="price">$52.51</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <!-------SIngle item End------------------>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/sandalwood.jpeg" alt="SandalWood Soap">
+            <h4 class="shop-title">SandalWood</h4>
+            <span class="price">$37.27</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/spear.jpeg" alt="Spearmint Soap">
+            <h4 class="shop-title">Spearmint</h4>
+            <span class="price">$4.78</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/vanilla.jpg" alt="Vanilla Oatmeal Soap">
+            <h4 class="shop-title">Vanilla Oatmeal</h4>
+            <span class="price">$9.78</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+
+    </div>
+    <div class="row">
+        <!---Singular Item---------->
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/white-t.jpeg" alt="White Tea Soap">
+            <h4 class="shop-title">White Tea</h4>
+            <span class="price">$13.49</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+            
+        </div>
+        <!-------SIngle item End------------------>
+        <div class="col-4 image">
+            <img class="shop-img" src="resources/images/rum.jpeg" alt="NW Cedar Soap">
+            <h4 class="shop-title">NorthWest Cedar</h4>
+            <span class="price">$27.85</span>
+            <button href="#" class="btn add-cart">Add To Cart</button>
+        </div>
+       
+
+    </div>
+</div>
+<!---offer-------------->  
+<div class="offer" id="location">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="resources/images/extra4.jpeg" alt="flower" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Special Deals available at SilverCreek Soap Company</p>
+                <h1>Free shipping on orders over $100</h1>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis mollitia quam animi nesciunt. Possimus quos quo sunt nemo nesciunt!</small>
+                <a href="#" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!----------Testimonialss---------------------->
+
+<section class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet error nam facere explicabo dolorum unde enim voluptatum minima quas voluptas.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="resources/images/flower.jpg" alt="user">
+                <h3>Name of user</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet error nam facere explicabo dolorum unde enim voluptatum minima quas voluptas.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="resources/images/flower.jpg" alt="user">
+                <h3>Name of user</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet error nam facere explicabo dolorum unde enim voluptatum minima quas voluptas.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <img src="resources/images/flower.jpg" alt="user">
+                <h3>Name of user</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------Footer-------------------->
+
+<section class="footer" id="footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Contact Info</h3>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: johndoe@gmail.com</p>
+                <div class="app-logo">
+                    <img src="resources/images/flower.jpg" alt="flower">
+                    <img src="resources/images/flower.jpg" alt="flower">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="resources/images/flower.jpg" alt="flower">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci expedita officia.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Linkedin</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">&copy;Copyright 2022 - Boreinc Freelancing Services</p>
+    </div>
+</section>
+
+<!---------Js for toggle menu--------------->
+<script>
+    let MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+
+
+</body>
+</html>

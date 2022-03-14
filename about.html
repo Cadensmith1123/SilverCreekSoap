@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverCreek Soap Company About Us</title>
+    <script src="https://kit.fontawesome.com/9c86043c09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="stylesheet" href="resources/about.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img class="img" src="resources/images/soap.jpg" alt="Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Products</a></li>
+                        
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="locations.html">Sold at..</a></li>
+                    </ul>
+    
+                </nav>
+                <i class="fa-solid fa-cart-shopping cart"></i>
+                <i class="fa fa-bars menu-icon" onclick="menutoggle()"></i>
+            </div>
+        </header>
+    
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="img-section">
+                <img src="resources/images/extra3.jpeg" alt="photo">
+            </div>
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi delectus</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque sed eaque, dolorum possimus quisquam id ipsam debitis culpa veritatis alias omnis molestiae molestias excepturi.</p>
+                    <div class="btn1">
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <!-- <div class="img-section">
+                <img src="resources/images/extra3.jpeg" alt="photo">
+            </div> -->
+        </div>
+
+    </section>
+
+    <!------------Footer------------>
+    <section class="footer" id="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Contact Info</h3>
+                    <p>Phone: 555-555-5555</p>
+                    <p>Email: johndoe@gmail.com</p>
+                    <div class="app-logo">
+                        <img src="resources/images/flower.jpg" alt="flower">
+                        <img src="resources/images/flower.jpg" alt="flower">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="resources/images/flower.jpg" alt="flower">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil adipisci expedita officia.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy;Copyright 2022 - Boreinc Freelancing Services</p>
+        </div>
+    </section>
+
+    <script>
+        let MenuItems = document.getElementById("MenuItems");
+    
+        MenuItems.style.maxHeight = "0px";
+    
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    
+    </script>
+
+
+
+</body>
+</html>
